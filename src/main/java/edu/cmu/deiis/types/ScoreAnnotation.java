@@ -13,12 +13,12 @@ import org.apache.uima.jcas.cas.TOP_Type;
  * Updated by JCasGen Fri Mar 28 00:42:28 CST 2014
  * XML source: /Users/IBAGNOG/Documents/workspace/videoProcessingUIMA/src/main/resources/descriptors/videoProc_typeSystem.xml
  * @generated */
-public class Result extends ConfigAnnotation {
+public class ScoreAnnotation extends ConfigAnnotation {
   /** @generated
    * @ordered 
    */
  // @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Result.class);
+  public final static int typeIndexID = JCasRegistry.register(ScoreAnnotation.class);
   /** @generated
    * @ordered 
    */
@@ -32,14 +32,14 @@ public class Result extends ConfigAnnotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Result() {/* intentionally empty block */}
+  protected ScoreAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Result(int addr, TOP_Type type) {
+  public ScoreAnnotation(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -47,7 +47,7 @@ public class Result extends ConfigAnnotation {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public Result(JCas jcas) {
+  public ScoreAnnotation(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -57,7 +57,7 @@ public class Result extends ConfigAnnotation {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public Result(JCas jcas, int begin, int end) {
+  public ScoreAnnotation(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -76,47 +76,25 @@ public class Result extends ConfigAnnotation {
  
     
   //*--------------*
-  //* Feature: N
+  //* Feature: scoreMetric
 
-  /** getter for N - gets 
+  /** getter for scoreMetric - gets 
    * @generated
    * @return value of the feature 
    */
-  public int getN() {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_N == null)
-      jcasType.jcas.throwFeatMissing("N", "edu.cmu.deiis.types.Result");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Result_Type)jcasType).casFeatCode_N);}
+  public String getScoreMetric() {
+    if (ScoreAnnotation_Type.featOkTst && ((ScoreAnnotation_Type)jcasType).casFeat_scoreMetric == null)
+      jcasType.jcas.throwFeatMissing("scoreMetric", "edu.cmu.deiis.types.ScoreAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ScoreAnnotation_Type)jcasType).casFeatCode_scoreMetric);}
     
-  /** setter for N - sets  
+  /** setter for scoreMetric - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setN(int v) {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_N == null)
-      jcasType.jcas.throwFeatMissing("N", "edu.cmu.deiis.types.Result");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Result_Type)jcasType).casFeatCode_N, v);}    
-   
-    
-  //*--------------*
-  //* Feature: precision
-
-  /** getter for precision - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public double getPrecision() {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_precision == null)
-      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Result");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Result_Type)jcasType).casFeatCode_precision);}
-    
-  /** setter for precision - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setPrecision(double v) {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_precision == null)
-      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Result");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Result_Type)jcasType).casFeatCode_precision, v);}    
+  public void setScoreMetric(String v) {
+    if (ScoreAnnotation_Type.featOkTst && ((ScoreAnnotation_Type)jcasType).casFeat_scoreMetric == null)
+      jcasType.jcas.throwFeatMissing("scoreMetric", "edu.cmu.deiis.types.ScoreAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ScoreAnnotation_Type)jcasType).casFeatCode_scoreMetric, v);}    
   }
 
     

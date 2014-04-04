@@ -7,18 +7,19 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
  * Updated by JCasGen Fri Mar 28 00:42:28 CST 2014
  * XML source: /Users/IBAGNOG/Documents/workspace/videoProcessingUIMA/src/main/resources/descriptors/videoProc_typeSystem.xml
  * @generated */
-public class Result extends ConfigAnnotation {
+public class PathType extends Annotation {
   /** @generated
    * @ordered 
    */
  // @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Result.class);
+  public final static int typeIndexID = JCasRegistry.register(PathType.class);
   /** @generated
    * @ordered 
    */
@@ -32,14 +33,14 @@ public class Result extends ConfigAnnotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Result() {/* intentionally empty block */}
+  protected PathType() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Result(int addr, TOP_Type type) {
+  public PathType(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -47,7 +48,7 @@ public class Result extends ConfigAnnotation {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public Result(JCas jcas) {
+  public PathType(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -57,7 +58,7 @@ public class Result extends ConfigAnnotation {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public Result(JCas jcas, int begin, int end) {
+  public PathType(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -76,47 +77,47 @@ public class Result extends ConfigAnnotation {
  
     
   //*--------------*
-  //* Feature: N
+  //* Feature: location
 
-  /** getter for N - gets 
+  /** getter for location - gets 
    * @generated
    * @return value of the feature 
    */
-  public int getN() {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_N == null)
-      jcasType.jcas.throwFeatMissing("N", "edu.cmu.deiis.types.Result");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Result_Type)jcasType).casFeatCode_N);}
+  public String getLocation() {
+    if (PathType_Type.featOkTst && ((PathType_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "edu.cmu.deiis.types.PathType");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PathType_Type)jcasType).casFeatCode_location);}
     
-  /** setter for N - sets  
+  /** setter for location - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setN(int v) {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_N == null)
-      jcasType.jcas.throwFeatMissing("N", "edu.cmu.deiis.types.Result");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Result_Type)jcasType).casFeatCode_N, v);}    
+  public void setLocation(String v) {
+    if (PathType_Type.featOkTst && ((PathType_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "edu.cmu.deiis.types.PathType");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PathType_Type)jcasType).casFeatCode_location, v);}    
    
     
   //*--------------*
-  //* Feature: precision
+  //* Feature: isFile
 
-  /** getter for precision - gets 
+  /** getter for isFile - gets 
    * @generated
    * @return value of the feature 
    */
-  public double getPrecision() {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_precision == null)
-      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Result");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Result_Type)jcasType).casFeatCode_precision);}
+  public boolean getIsFile() {
+    if (PathType_Type.featOkTst && ((PathType_Type)jcasType).casFeat_isFile == null)
+      jcasType.jcas.throwFeatMissing("isFile", "edu.cmu.deiis.types.PathType");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((PathType_Type)jcasType).casFeatCode_isFile);}
     
-  /** setter for precision - sets  
+  /** setter for isFile - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setPrecision(double v) {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_precision == null)
-      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Result");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Result_Type)jcasType).casFeatCode_precision, v);}    
+  public void setIsFile(boolean v) {
+    if (PathType_Type.featOkTst && ((PathType_Type)jcasType).casFeat_isFile == null)
+      jcasType.jcas.throwFeatMissing("isFile", "edu.cmu.deiis.types.PathType");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((PathType_Type)jcasType).casFeatCode_isFile, v);}    
   }
 
     

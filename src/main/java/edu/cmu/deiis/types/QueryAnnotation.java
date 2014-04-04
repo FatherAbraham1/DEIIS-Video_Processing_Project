@@ -13,12 +13,12 @@ import org.apache.uima.jcas.cas.TOP_Type;
  * Updated by JCasGen Fri Mar 28 00:42:28 CST 2014
  * XML source: /Users/IBAGNOG/Documents/workspace/videoProcessingUIMA/src/main/resources/descriptors/videoProc_typeSystem.xml
  * @generated */
-public class Result extends ConfigAnnotation {
+public class QueryAnnotation extends ConfigAnnotation {
   /** @generated
    * @ordered 
    */
  // @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Result.class);
+  public final static int typeIndexID = JCasRegistry.register(QueryAnnotation.class);
   /** @generated
    * @ordered 
    */
@@ -32,14 +32,14 @@ public class Result extends ConfigAnnotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Result() {/* intentionally empty block */}
+  protected QueryAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Result(int addr, TOP_Type type) {
+  public QueryAnnotation(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -47,7 +47,7 @@ public class Result extends ConfigAnnotation {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public Result(JCas jcas) {
+  public QueryAnnotation(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -57,7 +57,7 @@ public class Result extends ConfigAnnotation {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public Result(JCas jcas, int begin, int end) {
+  public QueryAnnotation(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -76,47 +76,47 @@ public class Result extends ConfigAnnotation {
  
     
   //*--------------*
-  //* Feature: N
+  //* Feature: image
 
-  /** getter for N - gets 
+  /** getter for image - gets 
    * @generated
    * @return value of the feature 
    */
-  public int getN() {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_N == null)
-      jcasType.jcas.throwFeatMissing("N", "edu.cmu.deiis.types.Result");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Result_Type)jcasType).casFeatCode_N);}
+  public String getImage() {
+    if (QueryAnnotation_Type.featOkTst && ((QueryAnnotation_Type)jcasType).casFeat_image == null)
+      jcasType.jcas.throwFeatMissing("image", "edu.cmu.deiis.types.QueryAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((QueryAnnotation_Type)jcasType).casFeatCode_image);}
     
-  /** setter for N - sets  
+  /** setter for image - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setN(int v) {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_N == null)
-      jcasType.jcas.throwFeatMissing("N", "edu.cmu.deiis.types.Result");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Result_Type)jcasType).casFeatCode_N, v);}    
+  public void setImage(String v) {
+    if (QueryAnnotation_Type.featOkTst && ((QueryAnnotation_Type)jcasType).casFeat_image == null)
+      jcasType.jcas.throwFeatMissing("image", "edu.cmu.deiis.types.QueryAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((QueryAnnotation_Type)jcasType).casFeatCode_image, v);}    
    
     
   //*--------------*
-  //* Feature: precision
+  //* Feature: dictionary
 
-  /** getter for precision - gets 
+  /** getter for dictionary - gets 
    * @generated
    * @return value of the feature 
    */
-  public double getPrecision() {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_precision == null)
-      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Result");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Result_Type)jcasType).casFeatCode_precision);}
+  public PathType getDictionary() {
+    if (QueryAnnotation_Type.featOkTst && ((QueryAnnotation_Type)jcasType).casFeat_dictionary == null)
+      jcasType.jcas.throwFeatMissing("dictionary", "edu.cmu.deiis.types.QueryAnnotation");
+    return (PathType)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((QueryAnnotation_Type)jcasType).casFeatCode_dictionary)));}
     
-  /** setter for precision - sets  
+  /** setter for dictionary - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setPrecision(double v) {
-    if (Result_Type.featOkTst && ((Result_Type)jcasType).casFeat_precision == null)
-      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Result");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Result_Type)jcasType).casFeatCode_precision, v);}    
+  public void setDictionary(PathType v) {
+    if (QueryAnnotation_Type.featOkTst && ((QueryAnnotation_Type)jcasType).casFeat_dictionary == null)
+      jcasType.jcas.throwFeatMissing("dictionary", "edu.cmu.deiis.types.QueryAnnotation");
+    jcasType.ll_cas.ll_setRefValue(addr, ((QueryAnnotation_Type)jcasType).casFeatCode_dictionary, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

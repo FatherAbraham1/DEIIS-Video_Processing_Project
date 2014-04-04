@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 21 03:24:04 CST 2014 */
+/* First created by JCasGen Fri Mar 28 00:42:28 CST 2014 */
 package edu.cmu.deiis.types;
 
 import org.apache.uima.jcas.JCas;
@@ -9,14 +9,13 @@ import org.apache.uima.cas.impl.FSGenerator;
 import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
-
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Mar 21 03:33:39 CST 2014
+ * Updated by JCasGen Fri Mar 28 00:42:28 CST 2014
  * @generated */
-public class Result_Type extends Annotation_Type {
+public class Result_Type extends ConfigAnnotation_Type {
   /** @generated 
    * @return the generator for this type
    */
@@ -39,15 +38,13 @@ public class Result_Type extends Annotation_Type {
   	  }
     };
   /** @generated */
-  @SuppressWarnings ("hiding")
+ // @SuppressWarnings ("hiding")
   public final static int typeIndexID = Result.typeIndexID;
   /** @generated 
      @modifiable */
-  @SuppressWarnings ("hiding")
+ // @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.deiis.types.Result");
-
-
-
+ 
   /** @generated */
   final Feature casFeat_N;
   /** @generated */
